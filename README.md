@@ -1,4 +1,4 @@
-# proxy-scraper-checker
+# proxy-scraper-checker [simple-output]
 
 ![Screenshot](screenshot.png)
 
@@ -9,7 +9,7 @@ HTTP, SOCKS4, SOCKS5 proxies scraper and checker.
 - Supports determining the geolocation of the proxy exit node.
 - Can determine if a proxy is anonymous.
 
-For a version that uses Python's built-in `logging` instead of [rich](https://github.com/willmcgugan/rich), see the [simple-output](https://github.com/monosans/proxy-scraper-checker/tree/simple-output) branch.
+For a version with fancy output powered by [rich](https://github.com/willmcgugan/rich), see the [main](https://github.com/monosans/proxy-scraper-checker) branch.
 
 You can get proxies obtained using this script in [monosans/proxy-list](https://github.com/monosans/proxy-list).
 

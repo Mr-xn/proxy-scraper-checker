@@ -1,4 +1,3 @@
 aiodns<4.0.0
 aiohttp-socks<1.0.0
 aiohttp<4.0.0
-rich<12.0.0
