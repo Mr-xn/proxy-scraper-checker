@@ -161,8 +161,9 @@ class ProxyScraperChecker:
             source: Proxy list URL.
             proto: http/socks4/socks5.
         """
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4710.168 Safari/537.36'}
         try:
-            async with session.get(source.strip(), timeout=15) as r:
+            async with session.get(source.strip(), headers=headers, proxy='http://127.0.0.1:7890', timeout=15) as r:
                 text = await r.text(encoding="utf-8")
         except Exception as e:
             self.c.print(f"{source}: {e}")
